@@ -13,6 +13,9 @@
 		AE0DC25D284A51A8009B7548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC25B284A51A8009B7548 /* Main.storyboard */; };
 		AE0DC25F284A51A9009B7548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC25E284A51A9009B7548 /* Assets.xcassets */; };
 		AE0DC262284A51A9009B7548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC260284A51A9009B7548 /* LaunchScreen.storyboard */; };
+		AE0DC26B284A54BE009B7548 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC269284A54BE009B7548 /* Delm-Medium.otf */; };
+		AE0DC26C284A54BE009B7548 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC26A284A54BE009B7548 /* ThirstySoftRegular.otf */; };
+		AEBE2651284E49C9003D53C5 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE2650284E49C9003D53C5 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AE0DC25E284A51A9009B7548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE0DC261284A51A9009B7548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE0DC263284A51A9009B7548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0DC269284A54BE009B7548 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
+		AE0DC26A284A54BE009B7548 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		AEBE2650284E49C9003D53C5 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		AE0DC254284A51A8009B7548 /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
-				AE0DC255284A51A8009B7548 /* AppDelegate.swift */,
-				AE0DC257284A51A8009B7548 /* SceneDelegate.swift */,
-				AE0DC259284A51A8009B7548 /* ViewController.swift */,
-				AE0DC25B284A51A8009B7548 /* Main.storyboard */,
-				AE0DC25E284A51A9009B7548 /* Assets.xcassets */,
-				AE0DC260284A51A9009B7548 /* LaunchScreen.storyboard */,
+				AE0DC2A8284E23FA009B7548 /* Supporting Files */,
+				AE0DC2A7284E2361009B7548 /* Model */,
+				AE0DC2A6284E2354009B7548 /* Controller */,
+				AE0DC2A5284E2342009B7548 /* View */,
 				AE0DC263284A51A9009B7548 /* Info.plist */,
 			);
 			path = Instagrid;
+			sourceTree = "<group>";
+		};
+		AE0DC2A5284E2342009B7548 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE0DC25B284A51A8009B7548 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE0DC2A6284E2354009B7548 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE0DC259284A51A8009B7548 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE0DC2A7284E2361009B7548 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AEBE2650284E49C9003D53C5 /* Button.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE0DC2A8284E23FA009B7548 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE0DC255284A51A8009B7548 /* AppDelegate.swift */,
+				AE0DC257284A51A8009B7548 /* SceneDelegate.swift */,
+				AE0DC25E284A51A9009B7548 /* Assets.xcassets */,
+				AE0DC269284A54BE009B7548 /* Delm-Medium.otf */,
+				AE0DC26A284A54BE009B7548 /* ThirstySoftRegular.otf */,
+				AE0DC260284A51A9009B7548 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +168,8 @@
 			files = (
 				AE0DC262284A51A9009B7548 /* LaunchScreen.storyboard in Resources */,
 				AE0DC25F284A51A9009B7548 /* Assets.xcassets in Resources */,
+				AE0DC26C284A54BE009B7548 /* ThirstySoftRegular.otf in Resources */,
+				AE0DC26B284A54BE009B7548 /* Delm-Medium.otf in Resources */,
 				AE0DC25D284A51A8009B7548 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBE2651284E49C9003D53C5 /* Button.swift in Sources */,
 				AE0DC25A284A51A8009B7548 /* ViewController.swift in Sources */,
 				AE0DC256284A51A8009B7548 /* AppDelegate.swift in Sources */,
 				AE0DC258284A51A8009B7548 /* SceneDelegate.swift in Sources */,
