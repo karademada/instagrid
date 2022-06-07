@@ -11,16 +11,35 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var selectedIcon: UIImageView!
     
+    @IBOutlet weak var selectedIcon2: UIImageView!
+    
+    @IBOutlet weak var selectedIcon3: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        selectedIcon.isHidden = false
+        selectedIcon2.isHidden = true
+        selectedIcon3.isHidden = true
+    }
+    
+    func allHide(){
         selectedIcon.isHidden = true
+        selectedIcon2.isHidden = true
+        selectedIcon3.isHidden = true
     }
     
     @IBAction func selectHandler(_ sender: Any) {
-        print("selectHandler")
-        selectedIcon.isHidden = !selectedIcon.isHidden
+        allHide()
+        selectedIcon.isHidden = false
     }
     
+    @IBAction func selectHandler2() {
+        allHide()
+        selectedIcon2.isHidden = false
+    }
+    @IBAction func selectHandler3() {
+        allHide()
+        selectedIcon3.isHidden = false
+    }
 }
 
