@@ -15,6 +15,11 @@
 		AE0DC262284A51A9009B7548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC260284A51A9009B7548 /* LaunchScreen.storyboard */; };
 		AE0DC26B284A54BE009B7548 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC269284A54BE009B7548 /* Delm-Medium.otf */; };
 		AE0DC26C284A54BE009B7548 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC26A284A54BE009B7548 /* ThirstySoftRegular.otf */; };
+		AE4E9E91285FC0F900366BB9 /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E9E90285FC0F900366BB9 /* ViewLayout.swift */; };
+		AE4E9E93285FC37F00366BB9 /* Layout1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E9E92285FC37F00366BB9 /* Layout1.swift */; };
+		AE4E9E9528605F9E00366BB9 /* Layout2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E9E9428605F9E00366BB9 /* Layout2.swift */; };
+		AE4E9E9728605FCF00366BB9 /* Layout3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E9E9628605FCF00366BB9 /* Layout3.swift */; };
+		AE4E9E992860924000366BB9 /* LayoutView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4E9E982860924000366BB9 /* LayoutView1.xib */; };
 		AEBE2651284E49C9003D53C5 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE2650284E49C9003D53C5 /* Button.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +34,11 @@
 		AE0DC263284A51A9009B7548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE0DC269284A54BE009B7548 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		AE0DC26A284A54BE009B7548 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		AE4E9E90285FC0F900366BB9 /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
+		AE4E9E92285FC37F00366BB9 /* Layout1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout1.swift; sourceTree = "<group>"; };
+		AE4E9E9428605F9E00366BB9 /* Layout2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout2.swift; sourceTree = "<group>"; };
+		AE4E9E9628605FCF00366BB9 /* Layout3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout3.swift; sourceTree = "<group>"; };
+		AE4E9E982860924000366BB9 /* LayoutView1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayoutView1.xib; sourceTree = "<group>"; };
 		AEBE2650284E49C9003D53C5 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				AE0DC25B284A51A8009B7548 /* Main.storyboard */,
+				AE4E9E982860924000366BB9 /* LayoutView1.xib */,
+				AE4E9E90285FC0F900366BB9 /* ViewLayout.swift */,
+				AE4E9E92285FC37F00366BB9 /* Layout1.swift */,
+				AE4E9E9428605F9E00366BB9 /* Layout2.swift */,
+				AE4E9E9628605FCF00366BB9 /* Layout3.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4E9E992860924000366BB9 /* LayoutView1.xib in Resources */,
 				AE0DC262284A51A9009B7548 /* LaunchScreen.storyboard in Resources */,
 				AE0DC25F284A51A9009B7548 /* Assets.xcassets in Resources */,
 				AE0DC26C284A54BE009B7548 /* ThirstySoftRegular.otf in Resources */,
@@ -181,10 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4E9E9528605F9E00366BB9 /* Layout2.swift in Sources */,
+				AE4E9E9728605FCF00366BB9 /* Layout3.swift in Sources */,
 				AEBE2651284E49C9003D53C5 /* Button.swift in Sources */,
 				AE0DC25A284A51A8009B7548 /* ViewController.swift in Sources */,
 				AE0DC256284A51A8009B7548 /* AppDelegate.swift in Sources */,
+				AE4E9E93285FC37F00366BB9 /* Layout1.swift in Sources */,
 				AE0DC258284A51A8009B7548 /* SceneDelegate.swift in Sources */,
+				AE4E9E91285FC0F900366BB9 /* ViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
