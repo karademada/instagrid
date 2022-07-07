@@ -15,18 +15,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var selectedIcon3: UIImageView!
     
-    @IBOutlet weak var layout1: Layout1!
+
+    @IBOutlet weak var layout1: UIView!
     
-    @IBOutlet weak var layout2: Layout2!
-    
-    @IBOutlet weak var layout3: Layout3!
+    @IBOutlet weak var layout2: UIView!
+
+    @IBOutlet weak var layout3: UIView!
+
+    @IBOutlet weak var layout4: UIView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        allHideButtons()
-        allHideLayouts()
-        layout1.isHidden = false
-        selectedIcon.isHidden = false
+        selectHandler()
     }
     
     func allHideButtons(){
@@ -35,30 +36,30 @@ class ViewController: UIViewController {
         selectedIcon3.isHidden = true
     }
     
-    func allHideLayouts(){
-        layout1.isHidden = true
-        layout2.isHidden = true
-        layout3.isHidden = true
+    func allShowLayouts(){
+        layout1.isHidden = false
+        layout2.isHidden = false
+        layout3.isHidden = false
+        layout4.isHidden = false
     }
     
-    @IBAction func selectHandler(_ sender: Any) {
+    @IBAction func selectHandler() {
         allHideButtons()
-        allHideLayouts()
+        allShowLayouts()
         selectedIcon.isHidden = false
-        layout1.isHidden = false
+        layout1.isHidden = true
     }
     
     @IBAction func selectHandler2() {
         allHideButtons()
-        allHideLayouts()
+        allShowLayouts()
         selectedIcon2.isHidden = false
-        layout2.isHidden = false
+        layout3.isHidden = true
     }
     @IBAction func selectHandler3() {
         allHideButtons()
-        allHideLayouts()
+        allShowLayouts()
         selectedIcon3.isHidden = false
-        layout3.isHidden = false
 
     }
 }
