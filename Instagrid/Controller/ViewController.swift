@@ -24,10 +24,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var layout4: UIView!
 
+    @IBOutlet weak var Button1: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         selectHandler()
+        Button1.imageView?.contentMode = .scaleAspectFill
     }
     
     func allHideButtons(){
