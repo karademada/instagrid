@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0CEAD1288123D80044B40A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CEAD0288123D80044B40A /* ImagePicker.swift */; };
 		AE0DC256284A51A8009B7548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0DC255284A51A8009B7548 /* AppDelegate.swift */; };
 		AE0DC258284A51A8009B7548 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0DC257284A51A8009B7548 /* SceneDelegate.swift */; };
 		AE0DC25A284A51A8009B7548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0DC259284A51A8009B7548 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE0CEAD0288123D80044B40A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		AE0DC252284A51A8009B7548 /* Instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0DC255284A51A8009B7548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE0DC257284A51A8009B7548 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				AE4E9E92285FC37F00366BB9 /* Layout1.swift */,
 				AE4E9E9428605F9E00366BB9 /* Layout2.swift */,
 				AE4E9E9628605FCF00366BB9 /* Layout3.swift */,
+				AE0CEAD0288123D80044B40A /* ImagePicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				AE4E9E9528605F9E00366BB9 /* Layout2.swift in Sources */,
 				AE4E9E9728605FCF00366BB9 /* Layout3.swift in Sources */,
 				AEBE2651284E49C9003D53C5 /* Button.swift in Sources */,
+				AE0CEAD1288123D80044B40A /* ImagePicker.swift in Sources */,
 				AE0DC25A284A51A8009B7548 /* ViewController.swift in Sources */,
 				AE0DC256284A51A8009B7548 /* AppDelegate.swift in Sources */,
 				AE4E9E93285FC37F00366BB9 /* Layout1.swift in Sources */,

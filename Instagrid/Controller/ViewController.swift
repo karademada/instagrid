@@ -7,29 +7,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, ImagePickerDelegate {
+    func didSelect(image: UIImage?) {
+        self.Image1.image = image
+    }
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
     @IBOutlet weak var selectedIcon: UIImageView!
-    
     @IBOutlet weak var selectedIcon2: UIImageView!
-    
     @IBOutlet weak var selectedIcon3: UIImageView!
     
-
     @IBOutlet weak var layout1: UIView!
-    
     @IBOutlet weak var layout2: UIView!
-
     @IBOutlet weak var layout3: UIView!
-
     @IBOutlet weak var layout4: UIView!
 
     @IBOutlet weak var Button1: UIButton!
     
+    
+    @IBOutlet weak var Image1: UIImageView!
+    @IBOutlet weak var Image2: UIImageView!
+    
+    @IBOutlet weak var imgPlus1: UIImageView!
+    @IBOutlet weak var imgPlus2: UIImageView!
+    
+    var imagePicker: ImagePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         selectHandler()
-        Button1.imageView?.contentMode = .scaleAspectFill
+        self.imagePicker = ImagePicker(presentationController: self, delegate: self)
     }
     
     func allHideButtons(){
@@ -43,6 +51,21 @@ class ViewController: UIViewController {
         layout2.isHidden = false
         layout3.isHidden = false
         layout4.isHidden = false
+    }
+    @IBAction func showImagePick1(_ sender: UIButton) {
+        print("showImagePick1")
+        self.imagePicker.present(from: sender)
+        imgPlus1.isHidden = true
+        Image1.contentMode = .scaleAspectFill
+        layout1.clipsToBounds = false
+    }
+    
+    @IBAction func showImagePick2(_ sender: UIButton) {
+        print("showImagePick2")
+        self.imagePicker.present(from: sender)
+        imgPlus2.isHidden = true
+        Image2.contentMode = .scaleAspectFill
+        layout2.clipsToBounds = false
     }
     
     @IBAction func selectHandler() {
