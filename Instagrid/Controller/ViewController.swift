@@ -57,7 +57,19 @@ class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSourc
     @IBOutlet weak var imgPlus4: UIImageView!
     
     var imagePicker: ImagePicker!
+    @IBOutlet var swipeGesture: UISwipeGestureRecognizer!
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        self.swipeGesture.direction = UIDevice.current.orientation == .portrait ? .up : .left
+    }
+    
+    @IBAction func gestureReco(_ sender: Any) {
+        let items = [self]
+        let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        present(ac, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         selectHandler()
