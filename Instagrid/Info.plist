@@ -4,8 +4,6 @@
 <dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>this app wants to use your photos</string>
-	<key>NSCameraUsageDescription</key>
-	<string>this app wants to take pictures</string>
 	<key>CFBundleIdentifier</key>
 	<string></string>
 	<key>UIAppFonts</key>
