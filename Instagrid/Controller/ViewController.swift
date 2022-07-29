@@ -78,7 +78,7 @@ class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSourc
     }
     
     func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
-        return "The eagle is in the poke"
+        return "Share a picture you build"
     }
     
     func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
