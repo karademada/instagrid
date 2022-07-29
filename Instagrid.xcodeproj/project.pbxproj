@@ -16,6 +16,7 @@
 		AE0DC262284A51A9009B7548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC260284A51A9009B7548 /* LaunchScreen.storyboard */; };
 		AE0DC26B284A54BE009B7548 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC269284A54BE009B7548 /* Delm-Medium.otf */; };
 		AE0DC26C284A54BE009B7548 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE0DC26A284A54BE009B7548 /* ThirstySoftRegular.otf */; };
+		AEB5E5982892DC5200DA7EE7 /* Icon@1024.png in Resources */ = {isa = PBXBuildFile; fileRef = AEB5E5972892DC5200DA7EE7 /* Icon@1024.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AE0DC263284A51A9009B7548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE0DC269284A54BE009B7548 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		AE0DC26A284A54BE009B7548 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		AEB5E5972892DC5200DA7EE7 /* Icon@1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@1024.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				AE0DC255284A51A8009B7548 /* AppDelegate.swift */,
 				AE0DC257284A51A8009B7548 /* SceneDelegate.swift */,
 				AE0DC25E284A51A9009B7548 /* Assets.xcassets */,
+				AEB5E5972892DC5200DA7EE7 /* Icon@1024.png */,
 				AE0DC269284A54BE009B7548 /* Delm-Medium.otf */,
 				AE0DC26A284A54BE009B7548 /* ThirstySoftRegular.otf */,
 				AE0DC260284A51A9009B7548 /* LaunchScreen.storyboard */,
@@ -162,6 +165,7 @@
 				AE0DC25F284A51A9009B7548 /* Assets.xcassets in Resources */,
 				AE0DC26C284A54BE009B7548 /* ThirstySoftRegular.otf in Resources */,
 				AE0DC26B284A54BE009B7548 /* Delm-Medium.otf in Resources */,
+				AEB5E5982892DC5200DA7EE7 /* Icon@1024.png in Resources */,
 				AE0DC25D284A51A8009B7548 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
