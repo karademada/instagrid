@@ -129,10 +129,23 @@ class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSourc
         }
     }
     
+    func keepImagesInPlace(){
+        image1.contentMode = .scaleAspectFill
+        layout1.clipsToBounds = false
+        image2.contentMode = .scaleAspectFill
+        layout2.clipsToBounds = false
+        image3.contentMode = .scaleAspectFill
+        layout3.clipsToBounds = false
+        image4.contentMode = .scaleAspectFill
+        layout4.clipsToBounds = false
+    }
+    
     
     @IBAction func changeLayoutButtonHandler1() {
         allHideButtons()
         allShowLayouts()
+        image1.contentMode = .scaleAspectFill
+        layout1.clipsToBounds = false
         selectedIcon.isHidden = false
         layout1.isHidden = true
     }
@@ -140,6 +153,8 @@ class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSourc
     @IBAction func changeLayoutButtonHandler2() {
         allHideButtons()
         allShowLayouts()
+        image2.contentMode = .scaleAspectFill
+        layout2.clipsToBounds = false
         selectedIcon2.isHidden = false
         layout3.isHidden = true
     }
