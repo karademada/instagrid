@@ -74,6 +74,8 @@ class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSourc
         
         self.swipeGesture.direction = UIDevice.current.orientation == .portrait ? .up : .left
         self.swipeLabel.text = UIDevice.current.orientation == .portrait ? "Swipe to share" : "Swipe left to share"
+        
+        self.keepImagesInPlace()
     }
     
     func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
