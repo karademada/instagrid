@@ -274,8 +274,9 @@
                                             <constraint firstAttribute="width" secondItem="XxS-9e-Qxq" secondAttribute="height" multiplier="1:1" id="xtw-Hv-Eeb"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="yww-EK-9Uh">
-                                        <rect key="frame" x="0.0" y="571" width="348" height="92"/>
+
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yww-EK-9Uh">
+                                        <rect key="frame" x="697.66666666666663" y="0.0" width="95.333333333333371" height="302"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" restorationIdentifier="button1" translatesAutoresizingMaskIntoConstraints="NO" id="9Vj-nF-c6q">
                                                 <rect key="frame" x="0.0" y="0.0" width="92" height="92"/>
@@ -415,6 +416,7 @@
                         <outlet property="but2" destination="wea-0u-O2e" id="Sgu-a6-rLr"/>
                         <outlet property="but3" destination="yrn-cN-Agp" id="5wT-dy-pA3"/>
                         <outlet property="but4" destination="Ies-fj-FEA" id="kIc-8X-QH2"/>
+                        <outlet property="gridViewRatioConstraint" destination="xtw-Hv-Eeb" id="8ms-E7-ctx"/>
                         <outlet property="image1" destination="5pw-vm-L8w" id="khK-kc-kVe"/>
                         <outlet property="image2" destination="fdc-wS-uMp" id="Goc-zv-WV1"/>
                         <outlet property="image3" destination="Cjj-7C-X7V" id="lvv-D3-Ioo"/>
