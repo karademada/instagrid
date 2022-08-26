@@ -40,6 +40,9 @@ class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSourc
     @IBOutlet weak var imgPlus3: UIImageView!
     @IBOutlet weak var imgPlus4: UIImageView!
     
+    
+    @IBOutlet weak var gridViewRatioConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         changeLayoutButtonHandler1()
@@ -76,6 +79,11 @@ class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSourc
         self.swipeLabel.text = UIDevice.current.orientation == .portrait ? "Swipe to share" : "Swipe left to share"
         
         self.keepImagesInPlace()
+        
+        self.gridViewRatioConstraint.priority = .defaultHigh
+        coordinator.animate(alongsideTransition: nil){ _ in
+            self.gridViewRatioConstraint.priority = .required
+        }
     }
     
     func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
