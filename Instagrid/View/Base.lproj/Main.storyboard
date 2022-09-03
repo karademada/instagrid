@@ -294,7 +294,7 @@
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="9Vj-nF-c6q" secondAttribute="height" multiplier="1:1" id="Af9-at-Ny3"/>
+                                                    <constraint firstAttribute="width" secondItem="9Vj-nF-c6q" secondAttribute="height" multiplier="1:1" priority="750" id="Af9-at-Ny3"/>
                                                     <constraint firstAttribute="trailing" secondItem="dFg-zh-HOQ" secondAttribute="trailing" id="Lit-vB-bm6"/>
                                                     <constraint firstItem="dFg-zh-HOQ" firstAttribute="top" secondItem="9Vj-nF-c6q" secondAttribute="top" id="M8W-OZ-eOB"/>
                                                     <constraint firstItem="5Nn-YN-s2l" firstAttribute="top" secondItem="dFg-zh-HOQ" secondAttribute="top" id="NfY-pM-ZuD"/>
@@ -330,7 +330,7 @@
                                                     <constraint firstItem="S1v-kp-WDj" firstAttribute="bottom" secondItem="1xH-4A-BXy" secondAttribute="bottom" id="fdr-Zo-CRc"/>
                                                     <constraint firstAttribute="trailing" secondItem="1xH-4A-BXy" secondAttribute="trailing" id="h50-oi-QRJ"/>
                                                     <constraint firstItem="1xH-4A-BXy" firstAttribute="top" secondItem="Dg1-xS-bWV" secondAttribute="top" id="nKv-Tf-gUE"/>
-                                                    <constraint firstAttribute="width" secondItem="Dg1-xS-bWV" secondAttribute="height" multiplier="1:1" id="wht-0r-3sK"/>
+                                                    <constraint firstAttribute="width" secondItem="Dg1-xS-bWV" secondAttribute="height" multiplier="1:1" priority="750" id="wht-0r-3sK"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtl-KV-tQi">
@@ -352,7 +352,7 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="fEm-j0-kWD" secondAttribute="bottom" id="6Xv-uS-dUs"/>
-                                                    <constraint firstAttribute="width" secondItem="vtl-KV-tQi" secondAttribute="height" multiplier="1:1" id="Jw4-IF-bdk"/>
+                                                    <constraint firstAttribute="width" secondItem="vtl-KV-tQi" secondAttribute="height" multiplier="1:1" priority="750" id="Jw4-IF-bdk"/>
                                                     <constraint firstAttribute="trailing" secondItem="fEm-j0-kWD" secondAttribute="trailing" id="NRP-Bz-5X8"/>
                                                     <constraint firstItem="2Zs-c8-dDr" firstAttribute="leading" secondItem="fEm-j0-kWD" secondAttribute="leading" priority="750" id="Tq6-fM-73Q"/>
                                                     <constraint firstItem="2Zs-c8-dDr" firstAttribute="bottom" secondItem="fEm-j0-kWD" secondAttribute="bottom" id="axz-Pw-Urh"/>
