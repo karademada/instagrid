@@ -9,15 +9,18 @@ import UIKit
 
 class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSource {
     
+    var imagePicker: ImagePicker!
+    @IBOutlet var swipeGesture: UISwipeGestureRecognizer!
+    
     @IBOutlet weak var uiViewForScreen: UIView!
-    @IBOutlet weak var But1: UIButton!
-    @IBOutlet weak var But2: UIButton!
-    
-    @IBOutlet weak var But3: UIButton!
-    @IBOutlet weak var But4: UIButton!
-    
+    @IBOutlet weak var swipeLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    
+
+    @IBOutlet weak var but1: UIButton!
+    @IBOutlet weak var but2: UIButton!
+    @IBOutlet weak var but3: UIButton!
+    @IBOutlet weak var but4: UIButton!
+        
     @IBOutlet weak var selectedIcon: UIImageView!
     @IBOutlet weak var selectedIcon2: UIImageView!
     @IBOutlet weak var selectedIcon3: UIImageView!
@@ -27,28 +30,26 @@ class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSourc
     @IBOutlet weak var layout3: UIView!
     @IBOutlet weak var layout4: UIView!
     
-    @IBOutlet weak var Button1: UIButton!
+    @IBOutlet weak var image1: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
+    @IBOutlet weak var image3: UIImageView!
+    @IBOutlet weak var image4: UIImageView!
     
-    
-    @IBOutlet weak var Image1: UIImageView!
-    @IBOutlet weak var Image2: UIImageView!
-    @IBOutlet weak var Image3: UIImageView!
-    
-    @IBOutlet weak var Image4: UIImageView!
     @IBOutlet weak var imgPlus1: UIImageView!
     @IBOutlet weak var imgPlus2: UIImageView!
     @IBOutlet weak var imgPlus3: UIImageView!
     @IBOutlet weak var imgPlus4: UIImageView!
     
-    var imagePicker: ImagePicker!
-    @IBOutlet var swipeGesture: UISwipeGestureRecognizer!
+    
+    @IBOutlet weak var gridViewRatioConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectHandler()
+        changeLayoutButtonHandler1()
         hideTextButtons()
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         self.swipeGesture.direction = .up
+        self.swipeLabel.text = UIDevice.current.orientation == .portrait ? "Swipe to share" : "Swipe left to share"
     }
     
     func allHideButtons(){
@@ -65,16 +66,24 @@ class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSourc
     }
     
     func hideTextButtons(){
-        But1.titleLabel?.isHidden=true;
-        But2.titleLabel?.isHidden=true;
-        But3.titleLabel?.isHidden=true;
-        But4.titleLabel?.isHidden=true;
+        but1.titleLabel?.isHidden=true;
+        but2.titleLabel?.isHidden=true;
+        but3.titleLabel?.isHidden=true;
+        but4.titleLabel?.isHidden=true;
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         
         self.swipeGesture.direction = UIDevice.current.orientation == .portrait ? .up : .left
+        self.swipeLabel.text = UIDevice.current.orientation == .portrait ? "Swipe to share" : "Swipe left to share"
+        
+        self.keepImagesInPlace()
+        
+        self.gridViewRatioConstraint.priority = .defaultHigh
+        coordinator.animate(alongsideTransition: nil){ _ in
+            self.gridViewRatioConstraint.priority = .required
+        }
     }
     
     func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
@@ -102,53 +111,64 @@ class ViewController: UIViewController, ImagePickerDelegate, UIActivityItemSourc
     }
 
     @IBAction func showImagePick1(_ sender: UIButton) {
-        print(sender.tag)
         self.imagePicker.present(from: sender)
         
         switch sender {
-        case But1 :
-            print("But1")
-            self.imageView = Image1
+        case but1 :
+            self.imageView = image1
             imgPlus1.isHidden = true
-            Image1.contentMode = .scaleAspectFill
+            image1.contentMode = .scaleAspectFill
             layout1.clipsToBounds = false
-        case But2 :
-            print("But2")
-            self.imageView = Image2
+        case but2 :
+            self.imageView = image2
             imgPlus2.isHidden = true
-            Image2.contentMode = .scaleAspectFill
+            image2.contentMode = .scaleAspectFill
             layout2.clipsToBounds = false
-        case But3 :
-            print("But3")
-            self.imageView = Image3
+        case but3 :
+            self.imageView = image3
             imgPlus3.isHidden = true
-            Image3.contentMode = .scaleAspectFill
+            image3.contentMode = .scaleAspectFill
             layout3.clipsToBounds = false
-        case But4 :
-            print("But4")
-            self.imageView = Image4
+        case but4 :
+            self.imageView = image4
             imgPlus4.isHidden = true
-            Image4.contentMode = .scaleAspectFill
+            image4.contentMode = .scaleAspectFill
             layout4.clipsToBounds = false
-        default:break
+        default:
+            break
         }
     }
     
+    func keepImagesInPlace(){
+        image1.contentMode = .scaleAspectFill
+        layout1.clipsToBounds = false
+        image2.contentMode = .scaleAspectFill
+        layout2.clipsToBounds = false
+        image3.contentMode = .scaleAspectFill
+        layout3.clipsToBounds = false
+        image4.contentMode = .scaleAspectFill
+        layout4.clipsToBounds = false
+    }
     
-    @IBAction func selectHandler() {
+    
+    @IBAction func changeLayoutButtonHandler1() {
         allHideButtons()
         allShowLayouts()
+        image1.contentMode = .scaleAspectFill
+        layout1.clipsToBounds = false
         selectedIcon.isHidden = false
         layout1.isHidden = true
     }
     
-    @IBAction func selectHandler2() {
+    @IBAction func changeLayoutButtonHandler2() {
         allHideButtons()
         allShowLayouts()
+        image2.contentMode = .scaleAspectFill
+        layout2.clipsToBounds = false
         selectedIcon2.isHidden = false
         layout3.isHidden = true
     }
-    @IBAction func selectHandler3() {
+    @IBAction func changeLayoutButtonHandler3() {
         allHideButtons()
         allShowLayouts()
         selectedIcon3.isHidden = false
